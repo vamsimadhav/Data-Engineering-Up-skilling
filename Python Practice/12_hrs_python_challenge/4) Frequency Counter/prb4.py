@@ -8,6 +8,8 @@ def frequency_counter(lis):
     return frequency
 
 
-# print("Enter the list of numbers : ")
-values = list(input("Enter the list of number without spaces: "))
+# values = list(input("Enter the list of number without spaces: "))
+li = input("Enter the list of numbers separated by spaces : ")
+string_list = li.split(' ')
+values = [int(num) for num in string_list]  # List Comprehension in Python
 print(frequency_counter(values))
