@@ -1,4 +1,5 @@
 def calculator(n1, n2, op):
+    # Forgot about / by 0 operation
 
     if op == '+':
         value = n1 + n2
@@ -7,7 +8,7 @@ def calculator(n1, n2, op):
     elif op == '-':
         value = n1 * n2
     elif op == '/':
-        value = n1 / n2
+        value = n1 / n2 if n2 != 0 else -1
     else:
         return -1
     return value
